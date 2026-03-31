@@ -1,0 +1,10 @@
+# Necessary dependencies for all MLOPs projects
+pandas 
+numpy 
+scikit-learn
+matplotlib
+seaborn
+google-cloud-storage
+pyyaml 
+mlflow
+setuptools

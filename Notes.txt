@@ -1,0 +1,3 @@
+set GOOGLE_APPLICATION_CREDENTIALS=/mnt/c/Users/think/Desktop/MLOps Bootcamp/Anime_Recomendation_Project/learningprojects-486111-a374659bd25c.json 
+=> for activation the google cli 
+export GOOGLE_APPLICATION_CREDENTIALS="/mnt/c/Users/think/Desktop/MLOps Bootcamp/Anime_Recomendation_Project/learningprojects-486111-a374659bd25c.json"

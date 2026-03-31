@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: Anime_Recommmender_System
+Version: 0.1.0
+Author: EL Aouan Mohamed
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: google-cloud-storage
+Requires-Dist: pyyaml
+Requires-Dist: mlflow
+Requires-Dist: setuptools
+Dynamic: author
+Dynamic: requires-dist
