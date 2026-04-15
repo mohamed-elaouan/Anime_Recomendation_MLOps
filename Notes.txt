@@ -6,4 +6,4 @@ export GOOGLE_APPLICATION_CREDENTIALS="/mnt/c/Users/think/Desktop/MLOps Bootcamp
 when we working with dvc 
 + the artifact folder (hasn't exist in the github , else it'll through an exception )
  
-+ 
++ then run dvc init => then run this commend dvc artifacts/raw(in this case is the file whose contain all the files for code sources )

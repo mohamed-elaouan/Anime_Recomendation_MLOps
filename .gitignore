@@ -1,11 +1,12 @@
 ALL+MATERIALS+-+2/
 venv/
+Anime_Recommmender_System.egg-info/
+[template of the interview]Fraud Detection Case Study Slides.pdf
+Notes.txt
+ALL+MATERIALS+-+2.zip
+# tradutionnal file storage data source
 artifacts/processed/
 artifacts/raw/
 artifacts/model/
 artifacts/weights/
 artifacts/model_checkpoint/
-Anime_Recommmender_System.egg-info/
-[template of the interview]Fraud Detection Case Study Slides.pdf
-Notes.txt
-ALL+MATERIALS+-+2.zip
