@@ -1,5 +1,4 @@
 Materials
-articats
 config
 notebooks
 pipeline

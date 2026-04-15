@@ -156,7 +156,7 @@ class DataProcessor:
             logger.info("DF AND SYNOPSIS_Df saved sucesfullyy...")
 
         except Exception as e:
-            raise CustomException("Failed to save animje and anime_synopsis data",sys)
+            raise CustomException("Failed to save animne and anime_synopsis data",sys)
     
     def run(self):
         try:

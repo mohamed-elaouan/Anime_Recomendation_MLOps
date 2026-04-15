@@ -8,3 +8,6 @@ google-cloud-storage
 pyyaml 
 mlflow
 setuptools
+comet-ml
+tensorflow
+dvc 

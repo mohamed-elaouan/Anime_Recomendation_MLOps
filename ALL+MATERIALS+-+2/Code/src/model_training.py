@@ -100,7 +100,7 @@ class ModelTraining:
 
         except Exception as e:
             logger.error(str(e))
-            raise CustomException("Errorduring Model Trainig Process",e)
+            raise CustomException("Error during Model Training Process",e)
         
     def extract_weights(self,layer_name,model):
         try:
@@ -111,7 +111,7 @@ class ModelTraining:
             return weights
         except Exception as e:
             logger.error(str(e))
-            raise CustomException("Errorduring Weight Extraction Process",e)
+            raise CustomException("Error during Weight Extraction Process",e)
     
     def save_model_weights(self,model):
         try:
@@ -128,7 +128,7 @@ class ModelTraining:
             self.experiment.log_asset(ANIME_WEIGHTS_PATH)
             self.experiment.log_asset(USER_WEIGHTS_PATH)
 
-            logger.info("User and Anime weights saved sucesfully....")
+            logger.info("User and Anime weights saved successfully....")
         except Exception as e:
             logger.error(str(e))
             raise CustomException("Error during saving model and weights Process",e)
