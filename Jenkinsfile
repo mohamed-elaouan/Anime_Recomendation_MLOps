@@ -29,13 +29,16 @@ pipeline {
         //  Dvc Pull => obtaint the data 
         stage('Dvc pull data from GCP bucket storage data source/ data entry.') {
             steps {
-                script{
-                    echo "Dvc pull data GCP"
-                    sh '''
-                    source ${VIRTUAL_ENV}/bin/activate
-                    dvc pull
-                    '''
+                WithCredentials([file(credentialsId: 'Anime-Recommendation-key', variable: 'GOOGLE_APPLICATION_CREDENTIALS')]) {
+                    script{
+                            echo "Dvc pull data from GCP"
+                            sh '''
+                                source ${VIRTUAL_ENV}/bin/activate
+                                dvc pull
+                                '''
+                    }
                 }
+                
             }
 
     }
