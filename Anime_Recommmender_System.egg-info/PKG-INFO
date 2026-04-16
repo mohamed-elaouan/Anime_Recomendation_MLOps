@@ -14,5 +14,7 @@ Requires-Dist: setuptools
 Requires-Dist: comet-ml
 Requires-Dist: tensorflow
 Requires-Dist: dvc
+Requires-Dist: dvc-gs
+Requires-Dist: flask
 Dynamic: author
 Dynamic: requires-dist

@@ -9,3 +9,105 @@
 2026-04-15 11:51:09,982 - INFO - Extracting weights for user_embedding
 2026-04-15 11:51:09,989 - INFO - Extracting weights for anime_embedding
 2026-04-15 11:51:10,571 - INFO - User and Anime weights saved sucesfully....
+2026-04-15 15:39:34,356 - INFO - DataProcessing Intialized
+2026-04-15 15:39:36,242 - INFO - Data loaded sucesfully for Data Processing
+2026-04-15 15:39:36,612 - INFO - Filtered users sucesfully...
+2026-04-15 15:39:37,821 - INFO - Scalind done for Processing 
+2026-04-15 15:39:37,944 - INFO - Encoding done for Users and Anime
+2026-04-15 15:39:38,878 - INFO - Data splitted sucesfullyy
+2026-04-15 15:39:38,893 - INFO - user2user_encoded saved sucesfully in processed directory
+2026-04-15 15:39:38,906 - INFO - user2user_decoded saved sucesfully in processed directory
+2026-04-15 15:39:38,945 - INFO - anim2anime_encoded saved sucesfully in processed directory
+2026-04-15 15:39:38,987 - INFO - anim2anime_decoded saved sucesfully in processed directory
+2026-04-15 15:39:48,094 - INFO - ALl the training testing data as well as rating_df is saved now..
+2026-04-15 15:39:48,301 - ERROR - Error in /mnt/c/Users/think/Desktop/MLOps Bootcamp/Anime_Recomendation_Project/src/data_preprocessing.py , line 128 : Failed to save animne and anime_synopsis data
+2026-04-15 15:42:52,045 - INFO - DataProcessing Intialized
+2026-04-15 15:42:53,570 - INFO - Data loaded sucesfully for Data Processing
+2026-04-15 15:42:53,852 - INFO - Filtered users sucesfully...
+2026-04-15 15:42:55,076 - INFO - Scalind done for Processing 
+2026-04-15 15:42:55,195 - INFO - Encoding done for Users and Anime
+2026-04-15 15:42:56,058 - INFO - Data splitted sucesfullyy
+2026-04-15 15:42:56,072 - INFO - user2user_encoded saved sucesfully in processed directory
+2026-04-15 15:42:56,084 - INFO - user2user_decoded saved sucesfully in processed directory
+2026-04-15 15:42:56,119 - INFO - anim2anime_encoded saved sucesfully in processed directory
+2026-04-15 15:42:56,154 - INFO - anim2anime_decoded saved sucesfully in processed directory
+2026-04-15 15:43:03,900 - INFO - ALl the training testing data as well as rating_df is saved now..
+2026-04-15 15:43:04,091 - ERROR - Error in /mnt/c/Users/think/Desktop/MLOps Bootcamp/Anime_Recomendation_Project/src/data_preprocessing.py , line 128 : Failed to save animne and anime_synopsis data
+2026-04-15 16:00:51,207 - INFO - DataProcessing Intialized
+2026-04-15 16:00:52,774 - INFO - Data loaded sucesfully for Data Processing
+2026-04-15 16:00:53,058 - INFO - Filtered users sucesfully...
+2026-04-15 16:00:54,269 - INFO - Scalind done for Processing 
+2026-04-15 16:00:54,389 - INFO - Encoding done for Users and Anime
+2026-04-15 16:00:55,208 - INFO - Data splitted sucesfullyy
+2026-04-15 16:00:55,222 - INFO - user2user_encoded saved sucesfully in processed directory
+2026-04-15 16:00:55,237 - INFO - user2user_decoded saved sucesfully in processed directory
+2026-04-15 16:00:55,273 - INFO - anim2anime_encoded saved sucesfully in processed directory
+2026-04-15 16:00:55,308 - INFO - anim2anime_decoded saved sucesfully in processed directory
+2026-04-15 16:01:03,156 - INFO - ALl the training testing data as well as rating_df is saved now..
+2026-04-15 16:01:03,345 - ERROR - Error in /mnt/c/Users/think/Desktop/MLOps Bootcamp/Anime_Recomendation_Project/src/data_preprocessing.py , line 128 : Failed to save animne and anime_synopsis data
+2026-04-15 16:10:49,455 - INFO - DataProcessing Intialized
+2026-04-15 16:10:51,279 - INFO - Data loaded sucesfully for Data Processing
+2026-04-15 16:10:51,629 - INFO - Filtered users sucesfully...
+2026-04-15 16:10:52,866 - INFO - Scalind done for Processing 
+2026-04-15 16:10:53,034 - INFO - Encoding done for Users and Anime
+2026-04-15 16:10:53,977 - INFO - Data splitted sucesfullyy
+2026-04-15 16:10:53,992 - INFO - user2user_encoded saved sucesfully in processed directory
+2026-04-15 16:10:54,011 - INFO - user2user_decoded saved sucesfully in processed directory
+2026-04-15 16:10:54,052 - INFO - anim2anime_encoded saved sucesfully in processed directory
+2026-04-15 16:10:54,087 - INFO - anim2anime_decoded saved sucesfully in processed directory
+2026-04-15 16:11:02,970 - INFO - ALl the training testing data as well as rating_df is saved now..
+2026-04-15 16:11:03,192 - ERROR - Error in /mnt/c/Users/think/Desktop/MLOps Bootcamp/Anime_Recomendation_Project/src/data_preprocessing.py , line 127 : Failed to save animne and anime_synopsis data
+2026-04-15 16:12:00,313 - INFO - DataProcessing Intialized
+2026-04-15 16:12:02,535 - INFO - Data loaded sucesfully for Data Processing
+2026-04-15 16:12:03,077 - INFO - Filtered users sucesfully...
+2026-04-15 16:12:04,479 - INFO - Scalind done for Processing 
+2026-04-15 16:12:04,630 - INFO - Encoding done for Users and Anime
+2026-04-15 16:12:05,796 - INFO - Data splitted sucesfullyy
+2026-04-15 16:12:05,813 - INFO - user2user_encoded saved sucesfully in processed directory
+2026-04-15 16:12:05,826 - INFO - user2user_decoded saved sucesfully in processed directory
+2026-04-15 16:12:05,867 - INFO - anim2anime_encoded saved sucesfully in processed directory
+2026-04-15 16:12:05,909 - INFO - anim2anime_decoded saved sucesfully in processed directory
+2026-04-15 16:12:15,707 - INFO - ALl the training testing data as well as rating_df is saved now..
+2026-04-15 16:12:15,925 - ERROR - Error in /mnt/c/Users/think/Desktop/MLOps Bootcamp/Anime_Recomendation_Project/src/data_preprocessing.py , line 127 : Failed to save animne and anime_synopsis data
+2026-04-15 16:13:47,320 - INFO - DataProcessing Intialized
+2026-04-15 16:13:49,308 - INFO - Data loaded sucesfully for Data Processing
+2026-04-15 16:13:49,707 - INFO - Filtered users sucesfully...
+2026-04-15 16:13:50,973 - INFO - Scalind done for Processing 
+2026-04-15 16:13:51,241 - INFO - Encoding done for Users and Anime
+2026-04-15 16:13:52,765 - INFO - Data splitted sucesfullyy
+2026-04-15 16:13:52,780 - INFO - user2user_encoded saved sucesfully in processed directory
+2026-04-15 16:13:52,795 - INFO - user2user_decoded saved sucesfully in processed directory
+2026-04-15 16:13:52,836 - INFO - anim2anime_encoded saved sucesfully in processed directory
+2026-04-15 16:13:52,875 - INFO - anim2anime_decoded saved sucesfully in processed directory
+2026-04-15 16:14:01,809 - INFO - ALl the training testing data as well as rating_df is saved now..
+2026-04-15 16:14:02,020 - ERROR - Error in /mnt/c/Users/think/Desktop/MLOps Bootcamp/Anime_Recomendation_Project/src/data_preprocessing.py , line 127 : Failed to save animne and anime_synopsis data
+2026-04-15 16:44:18,133 - INFO - Succesfully read the YAML file
+2026-04-15 16:44:18,137 - INFO - Data Ingestion Started....
+2026-04-15 16:44:18,137 - INFO - Starting Data Ingestion Process....
+2026-04-15 16:44:49,850 - INFO - Downloading Smaller Files ie anime and anime_with synopsis
+2026-04-15 16:45:06,913 - INFO - Data Ingestion DONE...
+2026-04-15 16:46:36,267 - INFO - Succesfully read the YAML file
+2026-04-15 16:46:36,276 - INFO - Data Ingestion Started....
+2026-04-15 16:46:36,277 - INFO - Starting Data Ingestion Process....
+2026-04-15 16:47:05,613 - INFO - Data Ingestion DONE...
+2026-04-15 16:49:09,304 - INFO - Succesfully read the YAML file
+2026-04-15 16:49:09,313 - INFO - Data Ingestion Started....
+2026-04-15 16:49:09,313 - INFO - Starting Data Ingestion Process....
+2026-04-15 16:49:11,352 - INFO - Downloading Smaller Files ie anime and anime_with synopsis
+2026-04-15 16:53:48,598 - INFO - Large file detected Only downloading 5M rows
+2026-04-15 16:53:49,946 - INFO - Downloading Smaller Files ie anime and anime_with synopsis
+2026-04-15 16:53:49,949 - INFO - Data Ingestion Completed...
+2026-04-15 16:53:49,949 - INFO - Data Ingestion DONE...
+2026-04-15 16:56:20,862 - INFO - DataProcessing Intialized
+2026-04-15 16:56:22,503 - INFO - Data loaded sucesfully for Data Processing
+2026-04-15 16:56:22,784 - INFO - Filtered users sucesfully...
+2026-04-15 16:56:23,991 - INFO - Scalind done for Processing 
+2026-04-15 16:56:24,103 - INFO - Encoding done for Users and Anime
+2026-04-15 16:56:24,882 - INFO - Data splitted sucesfullyy
+2026-04-15 16:56:24,897 - INFO - user2user_encoded saved sucesfully in processed directory
+2026-04-15 16:56:24,909 - INFO - user2user_decoded saved sucesfully in processed directory
+2026-04-15 16:56:24,946 - INFO - anim2anime_encoded saved sucesfully in processed directory
+2026-04-15 16:56:24,982 - INFO - anim2anime_decoded saved sucesfully in processed directory
+2026-04-15 16:56:32,803 - INFO - ALl the training testing data as well as rating_df is saved now..
+2026-04-15 16:56:40,061 - INFO - DF AND SYNOPSIS_Df saved sucesfullyy...
+2026-04-15 16:56:40,064 - INFO - Data Processing Pipeline Run sucesfully .... Congrats

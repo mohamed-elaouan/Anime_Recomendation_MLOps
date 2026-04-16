@@ -63,7 +63,6 @@ class DataProcessor:
             self.rating_df["user"] = self.rating_df["user_id"].map(self.user2user_encoded)
 
             ### Anime
-
             anime_ids = self.rating_df["anime_id"].unique().tolist()
             self.anime2anime_encoded = {x : i for i , x in enumerate(anime_ids)}
             self.anime2anime_decoded = {i : x for i , x in enumerate(anime_ids)}

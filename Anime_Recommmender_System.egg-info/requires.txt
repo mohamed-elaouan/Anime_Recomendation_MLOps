@@ -10,3 +10,5 @@ setuptools
 comet-ml
 tensorflow
 dvc
+dvc-gs
+flask
