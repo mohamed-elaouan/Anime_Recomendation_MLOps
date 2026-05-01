@@ -1,148 +1,139 @@
-# Anime Recommendation Project
+<div align="center">
+  <img src="file:///C:/Users/think/.gemini/antigravity/brain/25b850c0-d875-4fcd-ac2a-e5e6f2ad9781/anime_recommendation_banner_1777653791567.png" alt="Anime Recommendation System Banner" width="100%" />
 
-This project is an MLOps-oriented anime recommendation system. The main idea is to use anime-related data to build a machine learning pipeline that can suggest titles a user may like based on patterns in the dataset.
+  # 🎬 Anime Recommendation System — End-to-End MLOps Pipeline
+  <p><i>A production-grade Neural Network recommender system delivering personalized anime titles, powered by a robust GCP-based MLOps architecture.</i></p>
 
-The goal of the project is not only to train a recommendation model, but also to organize the work in a production-style structure. That means keeping the code modular, handling errors cleanly, logging project activity, and preparing the project so it can grow into a full ML pipeline.
+  <p>
+    <img src="https://img.shields.io/badge/Python-3.8+-blue.svg?style=for-the-badge&logo=python" alt="Python" />
+    <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />
+    <img src="https://img.shields.io/badge/Comet_ML-3DB680?style=for-the-badge&logo=comet&logoColor=white" alt="Comet ML" />
+    <img src="https://img.shields.io/badge/DVC-945DD6?style=for-the-badge&logo=dvc&logoColor=white" alt="DVC" />
+    <img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" alt="Jenkins" />
+    <img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" alt="GCP" />
+  </p>
+</div>
 
-## Project Idea
+---
 
-When there are thousands of anime titles available, it becomes difficult for users to decide what to watch next. A recommendation system helps solve this problem by learning from data and returning anime suggestions that are more relevant to user interests.
+## 🎯 Executive Summary
 
-This project aims to:
+In the vast world of anime, users often face "choice paralysis." This project provides a sophisticated solution: a **Hybrid Recommendation Engine** that combines the power of Deep Learning (Neural Collaborative Filtering) with Content-Based filtering.
 
-- understand anime data and user preference patterns
-- build a recommendation workflow using Python and machine learning tools
-- organize the project with an MLOps mindset
-- prepare the codebase for future stages such as training, evaluation, experiment tracking, and deployment
+Beyond the algorithm, this repository is a showcase of **Enterprise MLOps Practices**. It demonstrates a complete lifecycle—from version-controlled data and experiment tracking to automated CI/CD pipelines and containerized orchestration on Kubernetes.
 
-## Why This Project
+## 🚀 Key Engineering Highlights
 
-This repository is useful for learning how a machine learning project can be structured from the beginning. Instead of keeping everything inside a notebook, the project starts separating reusable code into modules so it becomes easier to maintain, test, and extend later.
+*   **🧠 Neural Recommender Engine**: Built using a Keras-based `RecommenderNet` with trainable embeddings for users and anime titles, optimized for high-dimensional preference mapping.
+*   **🔄 Hybrid Logic**: A sophisticated ensemble approach combining User-User Collaborative Filtering (via embedding similarity) and Content-Based filtering (via metadata analysis).
+*   **📉 Experiment Tracking (Comet ML)**: Integrated with **Comet ML** to log training metrics (loss, val_loss), hyperparameter tuning, and model assets in real-time.
+*   **🏗️ Data Version Control (DVC)**: Implemented DVC for handling large datasets and model artifacts, using **Google Cloud Storage (GCS)** as a remote backend to ensure reproducibility.
+*   **🛠️ Industrial CI/CD (Jenkins)**: A multi-stage Jenkins pipeline that automates:
+    *   Secure environment setup.
+    *   Data pulling via DVC.
+    *   Docker image construction.
+    *   Automated deployment to **Google Kubernetes Engine (GKE)**.
+*   **🐳 Production Orchestration**: Full containerization via Docker and Kubernetes manifests (`deployment.yaml`) for horizontal scaling and high availability.
 
-In simple terms:
+---
 
-- Machine Learning gives the recommendation logic
-- MLOps gives the project structure and scalability
+## 🏗️ System Architecture
 
-## Current Status
+The project follows a modular, decoupled architecture designed for scale:
 
-At the moment, the repository is in the foundation stage. The project already includes:
+```mermaid
+graph TD
+    subgraph "Data & Experiments"
+        A[(GCS / DVC)] --> B[Data Ingestion]
+        B --> C[Feature Engineering]
+        C --> D[Comet ML Tracking]
+    end
 
-- Python package setup with `setup.py`
-- dependency management with `requirements.txt`
-- a custom logging utility in `src/logger.py`
-- a custom exception class in `src/custom_exception.py`
-- folders prepared for pipelines, utilities, configuration, notebooks, and artifacts
+    subgraph "Training Pipeline"
+        C --> E[Neural Network Training]
+        E --> F[Weights Extraction]
+        F --> G((Model Registry))
+    end
 
-This means the project structure is ready, while the full recommendation pipeline can be added step by step.
+    subgraph "Serving & DevOps"
+        G --> H[Flask API]
+        H --> I[Docker Container]
+        I --> J[Jenkins Pipeline]
+        J --> K[GKE / Kubernetes]
+    end
+```
 
-## Tech Stack
+## 🛠️ Technology Stack
 
-The current project dependencies show that the system is designed around the following tools:
+| Domain | Tools |
+| :--- | :--- |
+| **ML & Deep Learning** | `TensorFlow`, `Keras`, `Scikit-Learn`, `Pandas`, `NumPy` |
+| **Experiment Tracking** | `Comet ML` |
+| **Data Orchestration** | `DVC` (GCS Remote Storage) |
+| **Backend / UI** | `Flask`, `Jinja2`, `HTML5/CSS3` |
+| **DevOps / CI/CD** | `Docker`, `Jenkins`, `Google Cloud (GCR)`, `Kubernetes (GKE)` |
 
-- `pandas` and `numpy` for data handling
-- `scikit-learn` for machine learning
-- `matplotlib` and `seaborn` for data visualization
-- `mlflow` for experiment tracking
-- `pyyaml` for configuration management
-- `google-cloud-storage` for cloud storage integration
+---
 
-## Project Structure
+## 📂 Repository Structure
 
 ```text
-Anime_Recomendation_Project/
-|-- README.md
-|-- requirements.txt
-|-- setup.py
-|-- src/
-|   |-- logger.py
-|   |-- custom_exception.py
-|-- pipeline/
-|-- utils/
-|-- config/
-|-- notebooks/
-|-- articats/
-|-- Materials/
+├── artifacts/          # Serialized models, embeddings, and encoders (DVC-tracked)
+├── config/             # Configuration YAMLs for paths and hyperparameters
+├── pipeline/           # Orchestration logic (Training & Prediction)
+├── src/                # Core implementation package
+│   ├── data_ingestion.py    # Robust data loading from sources
+│   ├── data_preprocessing.py # Feature engineering & encoding
+│   ├── model_training.py     # Neural Network training logic & Comet ML integration
+│   ├── base_model.py         # Keras Model architecture (RecommenderNet)
+│   ├── logger.py             # Standardized logging
+│   └── custom_exception.py   # Unified error handling
+├── static/ & templates/ # Web UI components
+├── application.py      # Entry point for the Flask application
+├── Dockerfile          # Multi-stage Docker build
+├── Jenkinsfile         # CI/CD Pipeline definition
+└── deployment.yaml     # Kubernetes orchestration manifests
 ```
 
-### Folder Explanation
+---
 
-- `src/`: shared core modules such as logging and exception handling
-- `pipeline/`: intended for training, prediction, and end-to-end ML workflows
-- `utils/`: helper functions that can be reused across the project
-- `config/`: configuration files and project settings
-- `notebooks/`: experiments, exploration, and model development work
-- `articats/`: likely intended to store generated outputs or model artifacts
-- `Materials/`: supporting project materials
+## ⚙️ Quick Start & Local Execution
 
-## How the Project Will Work
-
-The expected recommendation workflow is:
-
-1. collect or load anime dataset
-2. clean and preprocess the data
-3. engineer useful features
-4. train a recommendation model
-5. evaluate recommendation quality
-6. track experiments and results
-7. prepare the model for deployment or reuse
-
-Depending on the final design, the recommender can be:
-
-- content-based
-- collaborative filtering based
-- hybrid
-
-## Installation
-
-Clone the repository and install the dependencies:
-
+### 1. Clone & Setup
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/mohamed-elaouan/Anime_Recomendation_MLOps.git
 cd Anime_Recomendation_Project
+python -m venv venv
+source venv/bin/activate  # venv\Scripts\activate on Windows
 pip install -r requirements.txt
-```
-
-You can also install the project as a package:
-
-```bash
 pip install -e .
 ```
 
-## Logging and Error Handling
+### 2. Configure Credentials
+Ensure your GCP credentials and Comet ML API keys are configured in your environment or `src/model_training.py`.
 
-This project already includes two useful engineering components:
+### 3. Run the Application
+```bash
+python application.py
+```
+Visit `http://localhost:5000` to interact with the dashboard.
 
-- `src/logger.py` creates log files inside a `logs/` directory
-- `src/custom_exception.py` provides more detailed error messages with file name and line number
+---
 
-These are helpful when the project becomes larger and debugging gets harder.
+## 🚢 MLOps & Deployment Pipeline
 
-## Future Improvements
+*   **DVC Integration**: Large artifacts are stored in GCS. Run `dvc pull` to fetch the latest model weights.
+*   **Dockerization**: Build the production image: `docker build -t anime-recsys .`
+*   **Jenkins CI/CD**: The pipeline triggers on every push, ensuring that the latest code is built, containerized, and deployed to the Kubernetes cluster automatically.
+*   **Kubernetes (GKE)**: Scalable deployment using the provided `deployment.yaml`, ensuring the recommendation service stays online under load.
 
-Some natural next steps for this repository are:
+---
 
-- add the dataset and data ingestion pipeline
-- implement preprocessing and feature engineering
-- build the recommendation model
-- add model evaluation metrics
-- create configuration files for reproducible runs
-- track experiments with MLflow
-- save trained models and artifacts
-- expose predictions through an API or app
+## 👨‍💻 Author
+**Mohamed El Aouan**  
+*Data Scientist & MLOps Engineer*  
+*Specializing in building end-to-end ML systems that bridge the gap between research and production.*
 
-## Who This Project Is For
+---
+*If you found this project helpful, please consider giving it a ⭐!*
 
-This project is a good fit for:
-
-- beginners learning recommendation systems
-- students practicing MLOps project structure
-- developers who want to turn notebook work into a cleaner ML codebase
-
-## Author
-
-**EL Aouan Mohamed**
-
-## Summary
-
-This repository is the starting point of an anime recommendation system built with an MLOps mindset. Its purpose is to combine recommendation logic with good project organization, so the system can grow from experimentation into a more complete and production-ready ML application.

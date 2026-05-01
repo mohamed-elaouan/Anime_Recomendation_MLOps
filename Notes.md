@@ -16,3 +16,47 @@ when we working with dvc
 - myremote :represent the dvc_name
  `-d`: parameters means makes the remote default  
 - add the artifact files into to with commend => `dvc add artifacts/model artifacts/model_checkpoint artifacts/raw artifacts/weights artifacts/processed`
+
+
+## the right code for the installation the Kubernetes & Google cli is (in the CI CD deployment)
+
+''' 
++ Enter container:
+
+docker exec -u root -it jenkins-dind-2 bash
+
++ Clean previous wrong config (IMPORTANT):
+
+`rm -f /etc/apt/sources.list.d/google-cloud-sdk.list`
+
+`rm -f /etc/apt/keyrings/google-cloud.gpg`
+
++ Install required packages:
+
+`apt-get update`
+`apt-get install -y curl ca-certificates gnupg`
+
++ Add Google Cloud key (correct way):
+
+`mkdir -p /etc/apt/keyrings`
+`curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg \
+  | gpg --dearmor -o /etc/apt/keyrings/google-cloud.gpg`
+
++ Add repository (IMPORTANT: correct syntax):
+
+`echo "deb [signed-by=/etc/apt/keyrings/google-cloud.gpg] https://packages.cloud.google.com/apt cloud-sdk main" \
+  | tee /etc/apt/sources.list.d/google-cloud-sdk.list`
+
++ Update again (THIS STEP MUST WORK)
+
+`apt-get update
+`
++ Install packages:
+
+`apt-get install -y google-cloud-sdk kubectl`
+
+`google-cloud-sdk-gke-gcloud-auth-plugin`
+'''
+> then we make a check if the nessecary librarie is installed :
++ `kubectl version --client`
++ `gcloud --version`
